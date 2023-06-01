@@ -22,7 +22,7 @@ public class TasksTest {
 
     @Test
     public void shouldMatchEpicTrue() {
-        String[] subtasks = { "Молоко", "Яйца", "Хлеб" };
+        String[] subtasks = {"Молоко", "Яйца", "Хлеб"};
         Epic epic = new Epic(55, subtasks);
         boolean expected = true;
         boolean actual = epic.matches("Молоко");
@@ -31,7 +31,7 @@ public class TasksTest {
 
     @Test
     public void shouldMatchEpicFalse() {
-        String[] subtasks = { "Молоко", "Яйца", "Хлеб" };
+        String[] subtasks = {"Молоко", "Яйца", "Хлеб"};
         Epic epic = new Epic(55, subtasks);
         boolean expected = false;
         boolean actual = epic.matches("Масло");

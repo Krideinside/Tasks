@@ -1,4 +1,5 @@
 package ru.netology.javaqa;
+
 import java.util.Objects;
 
 public abstract class Task {
@@ -35,9 +36,7 @@ public abstract class Task {
      * @param query Поисковый запрос
      * @return Ответ на вопрос, подходит ли эта задача под поисковый запрос
      */
-    public boolean matches(String[] query) {
+    public boolean matches(String query) {
         return false;
     }
-
-    public abstract boolean matches(String query);
 }
